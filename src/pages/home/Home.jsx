@@ -1,18 +1,30 @@
-import React from 'react'
-import Feature from '../../components/featured/Feature'
-import Header from '../../components/header/Header'
-import Navbar from '../../components/navbar/Navbar'
-import './home.css'
+import React from "react";
+import Feature from "../../components/featured/Feature";
+import FeaturedProperties from "../../components/featuredProperties/FeaturedProperties";
+import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
+import MailList from "../../components/mailList/MailList";
+import Navbar from "../../components/navbar/Navbar";
+import PropertyList from "../../components/propertyList/PropertyList";
+import "./home.css";
 const Home = () => {
   return (
     <div>
-        <Navbar/>
-        <Header/>
-        <div className="homeContainer">
-          <Feature/>
-        </div>
+      <Navbar />
+      <Header />
+      <div className="homeContainer">
+        <Feature />
+        <h1 className="homeTitle">
+          Explore the world's best hotels and hostels
+        </h1>
+        <PropertyList />
+        <h1 className="homeTitle">Home's Our Guest Love</h1>
+        <FeaturedProperties />
+        <MailList/>
+        <Footer/>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
